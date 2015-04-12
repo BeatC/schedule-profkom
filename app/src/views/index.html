@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Расписание</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<nav class="nav">
+			<div class="nav__brand">
+				<a href="#">
+					<img src="./img/header_brand.png" alt="#" class="brand__icon"/>
+				</a>
+			</div>
+			<ul class="nav__list">
+				<li>
+					<a href="#">
+						<img src="#" alt="#" class="nav__icon"/>
+						<div class="nav__description">Спорткомплекс</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="#" alt="#" class="nav__icon">
+						<div class="nav__description">Дворец студентов</div>
+					</a>
+				</li>
+			</ul>
+			<div class="nav__search">
+				<input type="text" placeholder="Поиск" class="search__input">
+			</div>
+		</nav>
+		<aside class="sidebar">
+			<div class="sidebar__settings">
+				<form action="#" class="settings__form">
+					<div class="form__group">
+						<label for="department">Направление:</label>
+						<select class="form__select" name="dept" id="department">
+							<option value="choose">Выберите направление</option>
+							<option value="sport">Спорткомплекс</option>
+							<option value="palace">Дворец студентов</option>
+						</select>
+					</div>
+					<div class="form__group">
+						<label for="department">Секция:</label>
+						<select class="form__select" name="dept" id="department">
+							<option value="choose">Выберите секцию</option>
+							<option value="gym">Тяжелая атлетика</option>
+							<option value="gymnastics">Гимнастика</option>
+							<option value="swimming">Плавание</option>
+							<option value="football">Футбол</option>
+							<option value="basketball">Баскетбол</option>
+							<option value="volleyball">Воллейбол</option>
+							<option value="tennis">Теннис</option>
+							<option value="chess">Шахматы</option>
+						</select>
+					</div>
+					<div class="form__group">
+						<label for="department">Преподаватель:</label>
+						<select class="form__select" name="dept" id="department">
+							<option value="choose">Выберите преподавателя</option>
+							<option value="0">Иванова Иванна Ивановна</option>
+							<option value="1">Курпа Лидия Васильевна</option>
+							<option value="2">Шматко Татьяна Ивановна</option>
+						</select>
+					</div>
+					<div class="settings__collapse">
+						<a href="#">Скрыть настроки</a>
+					</div>
+				</form>
+			</div>
+			<ul class="sidebar__list">
+				<li><a href="#">Иванова Иванна Ивановна</a></li>
+				<li><a href="#">Курпа Лидия Васильевна</a></li>
+				<li><a href="#">Шматко Татьяна Ивановна</a></li>
+				<li><a href="#">Иванова Иванна Ивановна</a></li>
+				<li><a href="#">Курпа Лидия Васильевна</a></li>
+				<li><a href="#">Шматко Татьяна Ивановна</a></li>
+				<li><a href="#">Иванова Иванна Ивановна</a></li>
+				<li><a href="#">Курпа Лидия Васильевна</a></li>
+				<li><a href="#">Шматко Татьяна Ивановна</a></li>
+				<li><a href="#">Иванова Иванна Ивановна</a></li>
+				<li><a href="#">Курпа Лидия Васильевна</a></li>
+				<li><a href="#">Шматко Татьяна Ивановна</a></li>
+			</ul>
+		</aside>
+		<main class="table">
+			<h1 class="table__header">Расписание для спорткомплекса</h1>
+			<h2 class="table__direction">Фехтование</h2>
+			<h3 class="table__person">Иванова Иванна Ивановна</h3>
+			<div class="table__schedule">
+				<table>
+				<tbody>
+					<tr>
+						<th>№ пары</th>
+						<th>Понедельник</th>
+						<th>Вторник</th>
+						<th>Среда</th>
+						<th>Четверг</th>
+						<th>Пятница</th>
+					</tr>
+					<tr>
+						<td>8<sup>30</sup> - 10<sup>00</sup></td>
+						<td class="schedule__work">Примечание</td>
+						<td class="schedule__work">Примечание</td>
+						<td>-</td>
+						<td class="schedule__work">Примечание</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>10<sup>20</sup> - 12<sup>00</sup></td>
+						<td class="schedule__work">Примечание</td>
+						<td>-</td>
+						<td class="schedule__work">Примечание</td>
+						<td>-</td>
+						<td class="schedule__work">Примечание</td>
+					</tr>
+					<tr>
+						<td>12<sup>35</sup> - 14<sup>10</sup></td>
+						<td class="schedule__work">Примечание</td>
+						<td>-</td>
+						<td class="schedule__work">Примечание</td>
+						<td class="schedule__work">Примечание</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>14<sup>20</sup> - 16<sup>00</sup></td>
+						<td>-</td>
+						<td class="schedule__work">Примечание</td>
+						<td>-</td>
+						<td class="schedule__work">Примечание</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>16<sup>20</sup> - 18<sup>00</sup></td>
+						<td class="schedule__work">Примечание</td>
+						<td>-</td>
+						<td>-</td>
+						<td class="schedule__work">Примечание</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>18<sup>20</sup> - 20<sup>00</sup></td>
+						<td>-</td>
+						<td class="schedule__work">Примечание</td>
+						<td>-</td>
+						<td class="schedule__work">Примечание</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+		</main>
+		<footer class="footer">
+			
+		</footer>
+	</div>
+</body>
+</html>
