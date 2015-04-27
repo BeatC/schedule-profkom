@@ -15,18 +15,6 @@
 				</a>
 			</div>
 			<ul class="nav__list">
-				<li>
-					<a href="#">
-						<img src="#" alt="#" class="nav__icon"/>
-						<div class="nav__description">Спорткомплекс</div>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="#" alt="#" class="nav__icon">
-						<div class="nav__description">Дворец студентов</div>
-					</a>
-				</li>
 			</ul>
 			<div class="nav__search">
 				<input type="text" placeholder="Поиск" class="search__input">
@@ -34,42 +22,6 @@
 		</nav>
 		<aside class="sidebar">
 			<div class="sidebar__settings">
-				<form action="#" class="settings__form">
-					<div class="form__group">
-						<label for="department">Направление:</label>
-						<select class="form__select" name="dept" id="department">
-							<option value="choose">Выберите направление</option>
-							<option value="sport">Спорткомплекс</option>
-							<option value="palace">Дворец студентов</option>
-						</select>
-					</div>
-					<div class="form__group">
-						<label for="department">Секция:</label>
-						<select class="form__select" name="dept" id="department">
-							<option value="choose">Выберите секцию</option>
-							<option value="gym">Тяжелая атлетика</option>
-							<option value="gymnastics">Гимнастика</option>
-							<option value="swimming">Плавание</option>
-							<option value="football">Футбол</option>
-							<option value="basketball">Баскетбол</option>
-							<option value="volleyball">Воллейбол</option>
-							<option value="tennis">Теннис</option>
-							<option value="chess">Шахматы</option>
-						</select>
-					</div>
-					<div class="form__group">
-						<label for="department">Преподаватель:</label>
-						<select class="form__select" name="dept" id="department">
-							<option value="choose">Выберите преподавателя</option>
-							<option value="0">Иванова Иванна Ивановна</option>
-							<option value="1">Курпа Лидия Васильевна</option>
-							<option value="2">Шматко Татьяна Ивановна</option>
-						</select>
-					</div>
-					<div class="settings__collapse">
-						<a href="#">Скрыть настроки</a>
-					</div>
-				</form>
 			</div>
 			<ul class="sidebar__list">
 				<li><a href="#">Иванова Иванна Ивановна</a></li>
@@ -157,5 +109,55 @@
 			
 		</footer>
 	</div>
+	<script type="text/template" id="menuItem">
+		<li>
+			<a href="#">
+				<img src="http://lorempixel.com/30/30/cats" alt="#" class="nav__icon">
+				<div class="nav__description"><%= title %></div>
+			</a>
+		</li>
+	</script>
+	<script type="text/template" id="sidebarSettings">
+		<form action="#" class="settings__form">
+					<div class="form__group department">
+						<label for="department">Направление:</label>
+						<select class="form__select" name="dept" id="department">
+							<option value="choose">Выберите направление</option>
+							<option value="sport">Спорткомплекс</option>
+							<option value="palace">Дворец студентов</option>
+						</select>
+					</div>
+					<div class="form__group is-hidden section">
+						<label for="section">Секция:</label>
+						<select class="form__select" name="dept" id="section">
+							<option value="choose">Выберите секцию</option>
+							<option value="gym">Тяжелая атлетика</option>
+							<option value="gymnastics">Гимнастика</option>
+							<option value="swimming">Плавание</option>
+							<option value="football">Футбол</option>
+							<option value="basketball">Баскетбол</option>
+							<option value="volleyball">Воллейбол</option>
+							<option value="tennis">Теннис</option>
+							<option value="chess">Шахматы</option>
+						</select>
+					</div>
+					<div class="form__group is-hidden teacher">
+						<label for="teacher">Преподаватель:</label>
+						<select class="form__select" name="dept" id="teacher">
+							<option value="choose">Выберите преподавателя</option>
+							<option value="0">Иванова Иванна Ивановна</option>
+							<option value="1">Курпа Лидия Васильевна</option>
+							<option value="2">Шматко Татьяна Ивановна</option>
+						</select>
+					</div>
+					<div class="settings__collapse">
+						<a href="#" class="collapse__btn is-collapsed">Скрыть настроки</a>
+					</div>
+				</form>
+	</script>
+	<script src="../vendor/jquery/dist/jquery.min.js"></script>
+	<script src="../vendor/underscore/underscore-min.js"></script>
+	<script src="../vendor/backbone/backbone.js"></script>
+	<script data-main="./js/app" src="../vendor/requirejs/require.js"></script>
 </body>
 </html>

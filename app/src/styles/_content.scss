@@ -5,60 +5,65 @@ $linkColor: #3aaacf;
 aside.sidebar {
 	display: table-cell;
 	vertical-align: top;
-	height: 100%;
+	height: 100vh !important;
+	overflow: hidden;
 	box-sizing: border-box;
 	width: 18em;
 	background-color: #fff;
 	border-right: 1px solid #999;
 	margin: 0;
 
-	@include shadow(0, 0, 5, 0, rgba(0, 0, 0, 0.9));
+	@include shadow(0, 0, 5px, 0, rgba(0, 0, 0, 0.9));
 	ul {
 		margin: 0;
 	}
 
-	.settings__form {
-		padding: 1em;
-		padding-bottom: 1.5em;
-		border-bottom: 1px solid #999;
+	.sidebar__settings {
+		width: 279px;
+		
+		.settings__form {
+			padding: 1em;
+			padding-bottom: 1.5em;
+			border-bottom: 1px solid #999;
 
-		.form__group {
-			margin-bottom: 1em;
+			.form__group {
+				margin-bottom: 1em;
 
-			label {
+				label {
+					display: block;
+					text-align: center;
+					margin-bottom: 0.5em;
+					font-weight: 700;
+				}
+
+				select {
+					display: block;
+					margin: 0 auto;
+					background-color: #fff;
+					color: #333;
+					box-sizing: border-box;
+					height: 2em;
+					padding-left: 0.5em;
+					padding-right: 0.5em;
+					border-radius: 3px;
+					outline: none;
+					cursor: pointer;
+				}
+
+				option {
+					height: 2em;
+				}
+			}
+
+			.settings__collapse {
 				display: block;
 				text-align: center;
-				margin-bottom: 0.5em;
-				font-weight: 700;
-			}
-
-			select {
-				display: block;
-				margin: 0 auto;
-				background-color: #fff;
-				color: #333;
-				box-sizing: border-box;
-				height: 2em;
-				padding-left: 0.5em;
-				padding-right: 0.5em;
-				border-radius: 3px;
-				outline: none;
-				cursor: pointer;
-			}
-
-			option {
-				height: 2em;
-			}
-		}
-
-		.settings__collapse {
-			display: block;
-			text-align: center;
-			a {
-				color: $linkColor;
-				font-size: em(12);
-				text-decoration: none;
-				border-bottom: 1px dotted $linkColor;
+				a {
+					color: $linkColor;
+					font-size: em(12);
+					text-decoration: none;
+					border-bottom: 1px dotted $linkColor;
+				}
 			}
 		}
 	}

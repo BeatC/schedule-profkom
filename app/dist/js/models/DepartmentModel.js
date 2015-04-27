@@ -1,0 +1,1 @@
+define(function(){var e=Backbone.Model.extend({defaults:{department:"",sections:[],teachers:[]}});return e});
