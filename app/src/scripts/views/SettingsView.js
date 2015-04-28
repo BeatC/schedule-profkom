@@ -53,6 +53,7 @@ define([
 			},
 			render: function () {
 				$('.sidebar__settings').html(this.template({}));
+				return this;
 			}
 		});
 

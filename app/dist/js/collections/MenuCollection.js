@@ -1,0 +1,1 @@
+define(["jquery","underscore","backbone","../models/MenuItemModel"],function(e,n,o,d){var r=o.Collection.extend({model:d});return r});

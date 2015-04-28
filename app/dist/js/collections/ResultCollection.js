@@ -1,0 +1,1 @@
+define(["jquery","underscore","backbone","../models/ResultItemModel"],function(e,n,o,d){var l=o.Collection.extend({model:d});return l});

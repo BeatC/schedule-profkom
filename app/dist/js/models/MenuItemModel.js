@@ -1,0 +1,1 @@
+define(["jquery","underscore","backbone"],function(e,t,n){n.Model.extend({defaults:{glyph:"",title:"List item"}});return MenuItemView});

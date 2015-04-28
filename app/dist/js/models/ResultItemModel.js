@@ -1,0 +1,1 @@
+define(["jquery","underscore","backbone"],function(e,n,d){var r=d.Model.extend({defaults:{title:"",schedule:[]}});return r});

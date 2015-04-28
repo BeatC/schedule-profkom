@@ -1,0 +1,1 @@
+define(["jquery","underscore","backbone","../collections/MenuCollection"],function(e,n,i,t){var r=i.View.extend({model:new t,initialize:function(){this.listenTo(this.model,"change",this.render)},$el:".nav__list",render:function(){var e=this;return n.each(this.model,function(n){new MenuItem(n);e.$el.append(MenuItem.render())}),this}});return r});
